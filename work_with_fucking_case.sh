@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 
 if [[ ! -z $1 ]] && [[ ! -f $2 ]]; then
     echo "Args is not found"
