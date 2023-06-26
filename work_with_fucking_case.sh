@@ -1,23 +1,15 @@
-#!/bin/bash
+#!/bin/bash/
 
-if [ ! -n $1 ] && [ ! -f $2 ]; then
-    "Args not found"
+if [[ ! -z $1 ]] && [[ ! -f $2 ]]; then
+    echo "Args is not found"
     exit 1
-fi
+fi 
 
-case $1 in 
-    4) if [ $1 -eq 4 ]; then 
-        echo "Хорошо"
-    fi
-    ;; 
-    5) if [ $2 -eq 5 ]; then 
-        echo "Возможно"
-    fi
-    ;;
-    *) echo "нет"
-    exit 0
-    ;;
-esac
-
-head -n "$1" "$2"
-
+case $1 in:
+    4) echo "хорошо"
+    head -n $1;;
+    5) echo "может быть"
+    head -n $1;;
+    *) echo "not impressed"
+    exit 1;;
+esac 
