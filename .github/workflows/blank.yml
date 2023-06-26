@@ -8,5 +8,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Тест работоспособности кода
       run: |
-        chmod +x script.sh
-        ./script.sh
+        chmod +x work_with_fucking_case.sh
+        ./work_with_fucking_case.sh
